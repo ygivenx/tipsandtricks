@@ -1,5 +1,7 @@
 ### Here are some 💻 bash tricks 👻
 
 1. Find all folder in the current folder which are in GBs
-  - `du -h -d 1 . | grep "^\d\+.\d\?G"`
-  - `du -h -d <depth> . | grep "^\d+.\d\?<M|G>"` # customize it as your want
+  ```bash
+  - du -h -d 1 . | grep "^\d\+.\d\?G"
+  - du -h -d <depth> . | grep "^\d+.\d\?<M|G>" # customize it as you want
+  ```
