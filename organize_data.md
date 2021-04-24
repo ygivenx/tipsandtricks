@@ -1,9 +1,14 @@
-The data in your mac is spread around into downloads, desktops etc etc... There is python tool `organize-tool` which can help your declutter and organize all your data with simple yaml configuration. 
+## Organize your desktop now!
+
+
+The data in your mac is spread around into downloads, desktops etc etc... There is a **python** tool `organize-tool` which can help your declutter and organize all your data with a simple yaml configuration. 
 
 Thanks to [tfeldmann](https://github.com/tfeldmann) for this awesome tool
 
-Installation: pip3 install -U organize-tool
+Installation: `pip3 install -U organize-tool`
+
 Github: https://github.com/tfeldmann/organize
+
 Docs: [ReadTheDocs](https://organize.readthedocs.io/en/latest/)
 
 Usage:
