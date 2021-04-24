@@ -1,17 +1,18 @@
-## Organize your desktop now!
+## 🔖 Organize your computer 🖥 now!
 
 
-The data in your mac is spread around into downloads, desktops etc etc... There is a **python** tool `organize-tool` which can help your declutter and organize all your data with a simple yaml configuration. 
+The data 💿 in your mac 💻 is spread around into downloads, desktop etc etc... There is a **python** 🐍 tool `organize-tool` which can help your declutter and organize all your data with a simple yaml configuration. 
 
-Thanks to [tfeldmann](https://github.com/tfeldmann) for this awesome tool
+Thanks 😄 to [tfeldmann](https://github.com/tfeldmann) for this awesome 😎 tool
 
 Installation: `pip3 install -U organize-tool`
 
-Github: https://github.com/tfeldmann/organize
+💫 Github: https://github.com/tfeldmann/organize
 
-Docs: [ReadTheDocs](https://organize.readthedocs.io/en/latest/)
+📚 Docs: [ReadTheDocs](https://organize.readthedocs.io/en/latest/)
 
-Usage:
+🚗 Usage 👋🏼: 
+
 `organize config` # opens a file to be edited - I have attached mine below
 
 `organize sim` # simulate the run
@@ -20,6 +21,7 @@ Usage:
 
 ```yaml
 rules:
+    # move files to folder according to extension
     - folders:
         - ~/Downloads/**/*
         - ~/Desktop/**/*
@@ -40,15 +42,16 @@ rules:
           - json
           - key
           - zip
-          - tar.gz
       actions:
         - move: ~/Documents/{extension.upper}/
+    # Move screenshots to a dir
     - folders: ~/Desktop
       filters:
         - filename:
             startswith: "Screen Shot"
       actions:
         - move: ~/Desktop/Screenshots/
+    # remove empty files
     - folders:
           - ~/Downloads
           - ~/Desktop
@@ -56,6 +59,7 @@ rules:
           - filesize: 0
       actions:
           - trash
+    # remove partial downloads
     - folders: ~/Downloads
       filters:
           - extension:
@@ -68,6 +72,7 @@ rules:
                 mode: older
       actions:
           - trash
+    # remove duplicate files
     - folders:
         - ~/Desktop
         - ~/Downloads
